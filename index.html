@@ -778,7 +778,22 @@ form .select2.error + .select2-container--default .select2-selection--multiple {
     // Initialize Firebase
     const app = initializeApp(firebaseConfig);
     const auth = getAuth();
-
+ 
+    // Google Sign-In
+        const googleSignInButton = document.getElementById('google-connect');
+        googleSignInButton.addEventListener('click', () => {
+            const provider = new firebase.auth.GoogleAuthProvider();
+            firebase.auth().signInWithPopup(provider)
+                .then((result) => {
+                    // Signed in successfully
+                    const user = result.user;
+                    window.location.href = "courses.php"; // Redirect to courses page after successful login
+                })
+                .catch((error) => {
+                    console.error(error);
+                    alert("Failed to sign in with Google. Please contact admin.");
+                });
+        });
     // Forgot Password link click event handler
     document.getElementById("forgotPasswordLink").addEventListener("click", function(event) {
         event.preventDefault(); // Prevent the default link behavior
