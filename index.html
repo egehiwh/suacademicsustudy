@@ -759,8 +759,8 @@ form .select2.error + .select2-container--default .select2-selection--multiple {
 </style>
 <br>
 <div class="alert alert-success sins" style="display:none"></div>
-    <div class="alert alert-danger sind" style="display:none"></div>
-    <button id="googlever" type="button" style="color: #7367F0;background-color: transparent;border-color: #7367F0;" class="g-recaptcha btn btn-primary w-100">sign with Google</button>                        
+<div class="alert alert-danger sind" style="display:none"></div>
+<button id="googlever" type="button" style="color: #7367F0;background-color: transparent;border-color: #7367F0;" class="g-recaptcha btn btn-primary w-100">Sign in with Google</button>                        
 <script type="module">
     // Import the necessary Firebase modules
     import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
@@ -782,20 +782,21 @@ form .select2.error + .select2-container--default .select2-selection--multiple {
     const auth = getAuth();
  
     // Google Sign-In
-        const googleSignInButton = document.getElementById('google-connect');
-        googleSignInButton.addEventListener('click', () => {
-            const provider = new firebase.auth.GoogleAuthProvider();
-            firebase.auth().signInWithPopup(provider)
-                .then((result) => {
-                    // Signed in successfully
-                    const user = result.user;
-                    window.location.href = "courses.php"; // Redirect to courses page after successful login
-                })
-                .catch((error) => {
-                    console.error(error);
-                    alert("Failed to sign in with Google. Please contact admin.");
-                });
-        });
+    const googleSignInButton = document.getElementById('googlever'); // Corrected id
+    googleSignInButton.addEventListener('click', () => {
+        const provider = new firebase.auth.GoogleAuthProvider();
+        firebase.auth().signInWithPopup(provider)
+            .then((result) => {
+                // Signed in successfully
+                const user = result.user;
+                window.location.href = "courses.php"; // Redirect to courses page after successful login
+            })
+            .catch((error) => {
+                console.error(error);
+                alert("Failed to sign in with Google. Please contact admin.");
+            });
+    });
+
     // Forgot Password link click event handler
     document.getElementById("forgotPasswordLink").addEventListener("click", function(event) {
         event.preventDefault(); // Prevent the default link behavior
@@ -831,23 +832,22 @@ form .select2.error + .select2-container--default .select2-selection--multiple {
             });
     });
 </script>
-                        <p class="text-center mt-2"> <span>Don't have account </span>
-                  <button onclick="window.location.href='signup.html'" style="color: #7367F0;background-color: transparent;border-color: #7367F0;" class="g-recaptcha btn btn-primary w-100" data-theme="dark">sign up</button>     
+<p class="text-center mt-2"> <span>Don't have account </span>
+<button onclick="window.location.href='signup.html'" style="color: #7367F0;background-color: transparent;border-color: #7367F0;" class="g-recaptcha btn btn-primary w-100" data-theme="dark">Sign up</button>     
                              
-                              <br>
-<p class="text-center mt-2"> <span>Have Terrible while Registration</span>
-                        <div class="text-center mt-2">
+<br>
+<p class="text-center mt-2"> <span>Having trouble registering?</span>
+<div class="text-center mt-2">
     <a href="https://wa.me/201026383327?text=%D8%B9%D9%86%D8%AF%D9%8A%20%D9%85%D8%B4%D9%83%D9%84%D9%87%20%D8%A3%D8%AB%D9%86%D8%A7%D8%A1%20%D8%A5%D9%86%D8%B4%D8%A7%D8%A1%20%D8%A3%D9%83%D9%88%D9%86%D8%AA%20%D9%81%D9%8A%20%D9%85%D9%88%D9%82%D8%B9%20SU%20Academic%20Study%20%D9%88%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%AD%D9%84%20%D9%84%D9%84%D9%85%D8%B4%D9%83%D9%84%D9%87" class="btn btn-primary">
-        Contact US
+        Contact Us
     </a>
 </div>
-                        </p>           
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
       </div>
       <script>
          function toggle(id, pp) {
