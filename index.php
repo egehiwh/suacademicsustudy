@@ -825,7 +825,7 @@ form .select2.error + .select2-container--default .select2-selection--multiple {
             .then((userCredential) => {
                 // Signed in successfully
                 const user = userCredential.user;
-                window.location.href = "courses.html"; // Redirect to courses page after successful login
+                window.location.href = "courses.php"; // Redirect to courses page after successful login
             })
             .catch((error) => {
                 // Error handling
