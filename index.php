@@ -865,41 +865,8 @@ form .select2.error + .select2-container--default .select2-selection--multiple {
          }
       </script>
       </body>
-   <a href="https://t.me/forcommunicate">
-  <i class="fab fa-telegram"></i>
-</a>
-
-<a href="https://www.facebook.com/profile.php?id=100082748956376&mibextid=ZbWKwL">
-  <i class="fab fa-facebook"></i>
-</a>
-<style>
-  .fa-telegram,
-  .fa-facebook {
-    font-size: 30px; /* ÙŠÙ…ÙƒÙ† ØªØºÙŠÙŠØ± Ø§Ù„Ù‚ÙŠÙ…Ø© Ø­Ø³Ø¨ Ø§Ù„Ø­Ø§Ø¬Ø© */
-  }
-</style>
-     <a href="https://chat.whatsapp.com/Kx1g7Zt2d31IqwO5K0EiqX" class="animated-button3" <span></span> <span></span>
-     <div class="devd">
-    
-</head>       
-    <style>
-        
-        /* Ù†Øµ Ø¹Ø§Ø¦Ù… Ø¯Ø§Ø®Ù„ Ø§Ù„ÙˆÙŠØ¯Ø¬Øª */
-        .floating-text {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: white;
-            font-size: 14px;
-            text-align: center;
-        }
-        </style>
-      <body>
-          <script src="//code.tidio.co/bws1rfxe1xvvfqjzdsxnmnu873iz4pn5.js" async></script>
-      </body>
    </body>
-  <div style="text-align: center; line-height: 50%;">
+  <div style="text-align: center; line-heig: 50%;">
     <br>
 </div>
 <div style="text-align: center; padding: 10px;">
@@ -908,4 +875,6 @@ form .select2.error + .select2-container--default .select2-selection--multiple {
         <font color="white" size="6" face="Share Tech Mono"> - 𝚂𝚄 𝙰𝚌𝚊𝚍𝚎𝚖𝚒𝚌 𝚂𝚝𝚞𝚍𝚢 𝚃𝚎𝚊𝚖 𝙻𝚎𝚊𝚍𝚎𝚛𝚜 </font>
     </marquee>
 </div>
+      </head>
+      </body>
 </html>
